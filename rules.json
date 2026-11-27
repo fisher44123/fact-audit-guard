@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "fail_on": ["numbers", "claims"],
+  "warn_on": ["overclaim", "superlatives", "gap_section", "reverse"],
+  "number_check": {
+    "stat_units": ["个", "条", "项", "部", "篇", "次", "秒", "元", "%", "星", "人", "字", "万", "亿", "倍", "家", "款", "例"],
+    "max_unsourced_ratio": 0.3,
+    "skip_line_prefix": ["```", "|--", "#", "日期：", "版本："],
+    "design_param_words": ["设计参数", "超时", "阈值", "上限", "下限", "最多", "至少", "默认", "轮次"]
+  },
+  "overclaim_words": ["全量", "一对一", "必然", "彻底", "唯一可靠", "100%", "全部通过", "零缺陷"],
+  "superlative_words": ["唯一", "第一", "最大", "最强", "绝对", "史无前例", "史上最"],
+  "negation_words": "删掉|去掉|降级|改为|不再|避免|不写|禁止|不许|收回|原写|实际是",
+  "claim_patterns": [
+    ["全部通过", "自称全部通过"],
+    ["已实锤", "自称已实锤"],
+    ["零误报", "自称零误报"]
+  ],
+  "claim_negation": "未通过|不通过|缺|无法复核|没有存档|但|尚未|未验证",
+  "source_hint": "SRC-[A-Z0-9]+|https?://|file:///|\\[\\d{1,3}\\]|\\[\\d{4}\\s*\\||命令[:：]|python\\s",
+  "gap_section_pattern": "未闭合|覆盖缺口|局限|未覆盖|未验证|Open Questions|待查问题",
+  "reverse_question_pattern": "^\\s*[-*\\d\\.]{1,3}\\s*.*(如果.*错|最可能错|反向质疑|若.*不成立)",
+  "min_reverse_questions": 3
+}
