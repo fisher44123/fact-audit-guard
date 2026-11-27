@@ -71,9 +71,9 @@ python scripts/audit_draft.py examples/good_draft_demo.md --strict
 
 ```text
 === Fact Audit Guard ===
-  [BLOCK] 统计数字带出处: 2 个统计量中 2 个无出处（100%）；如 L3「80」
+  [BLOCK] 统计数字带出处: 3 个统计量中 3 个无出处（100%）；如 L3「80」
   [BLOCK] 无裸露自证断言: 自称全部通过
-  [FIX]   越级词 ≥2 处来源: 「100%」
+  [FIX]   越级词 ≥2 处来源: 「100% 全部通过」
   [FIX]   最高级词汇合规: 「最强」
   [FIX]   覆盖边界/Open Questions: 缺失局限或 Open Questions 章节
   [NOTE]  反向质疑 ≥3 条: 当前 0 条
@@ -84,7 +84,7 @@ Summary: BLOCK=2, FIX/NOTE=4
 
 ```text
 === Fact Audit Guard ===
-  [PASS]  统计数字带出处: 1 个统计量中 0 个无出处（0%）
+  [PASS]  统计数字带出处: 0 个统计量中 0 个无出处（0%）
   [PASS]  无裸露自证断言: 通过
   [PASS]  越级词 ≥2 处来源: 通过
   [PASS]  最高级词汇合规: 通过
